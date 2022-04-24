@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.portfolioList {
+    width: 150px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: $mainColor2;
+    background: none;
+    margin: 0 10px;
+    border: 1px solid $mainColor2;
+    box-shadow: 0 3px #999;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    @include mobile{
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    &:hover{
+        background-color: $mainColor2;
+        color: $mainColor1;
+    }
+
+    &:focus{
+        background-color: $mainColor3;
+        box-shadow: 0 1px #666;
+        color: $mainColor1;
+        transform: translate(0, 4px);
+    }
+
+    &:active{
+        background-color: $mainColor3;
+        box-shadow: 0 1px #666;
+        color: $mainColor1;
+    }
+}

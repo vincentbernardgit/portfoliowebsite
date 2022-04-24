@@ -1,0 +1,17 @@
+$mainColor1: #1d1d1d;
+$mainColor2: #1a75ff;
+$mainColor3: #0052cc;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+};
+
+@mixin tablet {
+    @media (max-width: #{$width}){
+        @content
+    }
+};
